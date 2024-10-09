@@ -1,21 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:tracker/owner_details_screen.dart';
 
+import '../const/font.dart';
+
 class OwnerCard extends StatelessWidget {
   const OwnerCard({super.key});
 
   @override
   Widget build(BuildContext context) {
-    const textStyle = TextStyle(
-      color: Color(0xFF6b7870),
-      fontSize: 18,
-      fontWeight: FontWeight.w500,
-    );
-    const textStyle2 = TextStyle(
-      color: Color(0xFF6b7870),
-      fontSize: 16,
-      fontWeight: FontWeight.w400,
-    );
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Card(
@@ -33,11 +25,7 @@ class OwnerCard extends StatelessWidget {
             title: const Center(
               child: Text(
                 'PMG',
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Color(0xFF6b7870),
-                  fontWeight: FontWeight.w700,
-                ),
+                style: boldSubTitle,
               ),
             ),
             subtitle: const Column(

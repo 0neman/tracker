@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:tracker/components/horse_card.dart';
+import 'package:tracker/const/font.dart';
 
 class OwnerDetailsScreen extends StatelessWidget {
   static String routeName = '/Owner-Detail';
@@ -19,11 +20,7 @@ class OwnerDetailsScreen extends StatelessWidget {
           shadowColor: const Color(0xFF9eaba2),
           title: Text(
             name,
-            style: const TextStyle(
-              color: Color(0xFF6b7870),
-              fontSize: 24,
-              fontWeight: FontWeight.w700,
-            ),
+            style: boldTitle,
           ),
           leading: const BackButton(
             color: Color(0xFF6b7870),

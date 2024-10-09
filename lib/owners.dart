@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tracker/components/custom_drawer.dart';
+import 'package:tracker/const/font.dart';
 
 import './components/owner_card.dart';
 
@@ -34,11 +35,7 @@ class OwnersScreen extends StatelessWidget {
         ),
         title: const Text(
           "Owners",
-          style: TextStyle(
-            color: Color(0xFF6b7870),
-            fontSize: 24,
-            fontWeight: FontWeight.w700,
-          ),
+          style: boldTitle,
         ),
         actions: [
           IconButton(

@@ -1,23 +1,12 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
+import '../const/font.dart';
 
 class Todo extends StatelessWidget {
   const Todo({super.key});
 
   @override
   Widget build(BuildContext context) {
-    const textStyle = TextStyle(
-      color: Color(0xFF6b7870),
-      fontSize: 18,
-      fontWeight: FontWeight.w500,
-    );
-    const textStyle2 = TextStyle(
-      color: Color(0xFF6b7870),
-      fontSize: 16,
-      fontWeight: FontWeight.w400,
-    );
     return Dismissible(
       background: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 15),

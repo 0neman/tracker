@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:tracker/components/custom_drawer.dart';
+import 'package:tracker/const/font.dart';
 
 import 'components/todo_card.dart';
 
@@ -35,11 +36,7 @@ class TodoScreen extends StatelessWidget {
         ),
         title: const Text(
           "Today's Tasks",
-          style: TextStyle(
-            color: Color(0xFF6b7870),
-            fontSize: 24,
-            fontWeight: FontWeight.w700,
-          ),
+          style: boldTitle,
         ),
         actions: [
           IconButton(
