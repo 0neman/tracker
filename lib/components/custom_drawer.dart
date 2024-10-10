@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tracker/owners.dart';
+import 'package:tracker/screens/owners_screen.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});

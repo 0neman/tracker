@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tracker/expenses.dart';
-import 'package:tracker/horse_details_screen.dart';
-import 'package:tracker/owner_details_screen.dart';
-import 'package:tracker/owners.dart';
-import 'package:tracker/todo_screen.dart';
+import 'package:tracker/screens/expenses_screen.dart';
+import 'package:tracker/screens/horse_details_screen.dart';
+import 'package:tracker/screens/owner_details_screen.dart';
+import 'package:tracker/screens/owners_screen.dart';
+import 'package:tracker/screens/todo_screen.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tracker/owner_details_screen.dart';
+import 'package:tracker/screens/owner_details_screen.dart';
 
 import '../const/font.dart';
 

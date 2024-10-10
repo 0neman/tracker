@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:tracker/components/custom_drawer.dart';
 import 'package:tracker/const/font.dart';
 
-import './components/owner_card.dart';
+import '../components/todo_card.dart';
 
-class OwnersScreen extends StatelessWidget {
-  static String routeName = '/Owners';
-  OwnersScreen({super.key});
+class TodoScreen extends StatelessWidget {
+  TodoScreen({super.key});
 
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -34,7 +33,7 @@ class OwnersScreen extends StatelessWidget {
           ),
         ),
         title: const Text(
-          "Owners",
+          "Today's Tasks",
           style: boldTitle,
         ),
         actions: [
@@ -49,12 +48,14 @@ class OwnersScreen extends StatelessWidget {
         ],
       ),
       drawer: const CustomDrawer(),
-      body: ListView.separated(
-        itemBuilder: (context, index) => OwnerCard(),
-        separatorBuilder: (context, index) => const SizedBox(
-          height: 5,
-        ),
-        itemCount: 5,
+      body: Padding(
+        padding: const EdgeInsets.only(top: 10),
+        child: ListView.separated(
+            itemBuilder: (context, index) => const Todo(),
+            separatorBuilder: (context, index) => const SizedBox(
+                  height: 5,
+                ),
+            itemCount: 3),
       ),
     );
   }
