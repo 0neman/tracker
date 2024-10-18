@@ -17,10 +17,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Tracker',
-      home: const HorseDetailsScreen(),
+      home: HorseDetailsScreen(),
       routes: {
         OwnersScreen.routeName: (context) => OwnersScreen(),
         OwnerDetailsScreen.routeName: (context) => const OwnerDetailsScreen(),
+        HorseDetailsScreen.routeName: (context) => const HorseDetailsScreen(),
       },
     );
   }

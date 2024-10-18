@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tracker/screens/horse_details_screen.dart';
 
 import '../const/font.dart';
 
@@ -7,25 +8,27 @@ class HorseCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.all(8.0),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
       child: Card(
-        shadowColor: Color(0xFF9eaba2),
+        shadowColor: const Color(0xFF9eaba2),
         elevation: 5,
-        surfaceTintColor: Color(0xFF6b7870),
+        surfaceTintColor: const Color(0xFF6b7870),
         color: Colors.white,
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
           child: ListTile(
+            onTap: () =>
+                Navigator.pushNamed(context, HorseDetailsScreen.routeName),
             isThreeLine: true,
             visualDensity: VisualDensity.comfortable,
-            title: Center(
+            title: const Center(
               child: Text(
                 'Name of the Horse',
                 style: boldSubTitle,
               ),
             ),
-            subtitle: Column(
+            subtitle: const Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -60,7 +63,7 @@ class HorseCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "Vaccination day:",
+                      "vermifugation day:",
                       style: textStyle,
                     ),
                     Text(
