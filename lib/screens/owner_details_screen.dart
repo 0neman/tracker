@@ -50,7 +50,7 @@ class OwnerDetailsScreen extends StatelessWidget {
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.circular(20),
         child: Container(
-          color: Color(0xFF6b7870).withOpacity(0.5),
+          color: const Color(0xFF6b7870).withOpacity(0.5),
           child: BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
             child: BottomNavigationBar(
