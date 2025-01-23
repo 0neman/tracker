@@ -42,7 +42,7 @@ class HorseDetailsScreen extends StatelessWidget {
                           color: Colors.white,
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.black.withOpacity(0.30),
+                              color: Colors.black.withValues(alpha: 0.30),
                               offset: const Offset(1, 5),
                               blurRadius: 10,
                               spreadRadius: -7,
@@ -70,7 +70,7 @@ class HorseDetailsScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.30),
+                            color: Colors.black.withValues(alpha: 0.6),
                             offset: const Offset(5, 10),
                             blurRadius: 10,
                             spreadRadius: -7,
@@ -104,6 +104,19 @@ class HorseDetailsScreen extends StatelessWidget {
             const Text(
               'Vaccination day: ${99} / ${99} / ${99}',
               style: largeText,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'History',
+                  style: boldTitle,
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.add_circle_outline),
+                )
+              ],
             ),
           ],
         ),
