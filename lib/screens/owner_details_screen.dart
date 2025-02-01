@@ -15,7 +15,7 @@ class OwnerDetailsScreen extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.elliptical(25, 20)),
           ),
           toolbarHeight: 100,
-          backgroundColor: Colors.white.withOpacity(0.8),
+          backgroundColor: Colors.white.withValues(alpha: 0.8),
           elevation: 3,
           shadowColor: const Color(0xFF9eaba2),
           title: Text(
@@ -39,7 +39,7 @@ class OwnerDetailsScreen extends StatelessWidget {
     return Scaffold(
       extendBody: true,
       backgroundColor: const Color(0xFFbdd1c5),
-      appBar: appBar('something'),
+      appBar: appBar('Owner Details Screen'),
       body: ListView.separated(
         itemBuilder: (context, index) => HorseCard(),
         separatorBuilder: (context, index) => const SizedBox(
@@ -50,7 +50,7 @@ class OwnerDetailsScreen extends StatelessWidget {
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.circular(20),
         child: Container(
-          color: const Color(0xFF6b7870).withOpacity(0.5),
+          color: const Color(0xFF6b7870).withValues(alpha: 0.5),
           child: BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
             child: BottomNavigationBar(
@@ -65,7 +65,7 @@ class OwnerDetailsScreen extends StatelessWidget {
                   ),
                   BottomNavigationBarItem(
                     icon: Icon(Icons.abc),
-                    label: '??',
+                    label: 'Owners History',
                     backgroundColor: Colors.transparent,
                   )
                 ]),

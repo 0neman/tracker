@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Tracker',
-      home: HorseDetailsScreen(),
+      home: TodoScreen(),
       routes: {
         OwnersScreen.routeName: (context) => OwnersScreen(),
         OwnerDetailsScreen.routeName: (context) => const OwnerDetailsScreen(),
