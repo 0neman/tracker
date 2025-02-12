@@ -12,7 +12,10 @@ class OwnerDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     appBar(String name) => AppBar(
           shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.elliptical(25, 20)),
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.elliptical(25, 20),
+              bottomRight: Radius.elliptical(25, 20),
+            ),
           ),
           toolbarHeight: 100,
           backgroundColor: Colors.white.withOpacity(0.8),

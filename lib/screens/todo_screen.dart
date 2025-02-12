@@ -16,7 +16,10 @@ class TodoScreen extends StatelessWidget {
       backgroundColor: const Color(0xFFbdd1c5),
       appBar: AppBar(
         shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.elliptical(25, 20)),
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.elliptical(25, 20),
+            bottomRight: Radius.elliptical(25, 20),
+          ),
         ),
         toolbarHeight: 100,
         backgroundColor: Colors.white.withOpacity(0.8),
